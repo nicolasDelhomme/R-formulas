@@ -189,7 +189,8 @@ chisq.test(abs(residuals.lm(lm.m)))
 
 cor.test(as.numeric(predict.lm(lm.m)),Sepal.Width[Sepal.Length>4.6])
 
-plot(as.numeric(predict.lm(lm.m,newdata = iris[Sepal.Length<=4.6,])),Sepal.Width[Sepal.Length<=4.6])
+plot(as.numeric(predict.lm(lm.m,newdata = iris[Sepal.Length<=4.6,])),
+     Sepal.Width[Sepal.Length<=4.6])
 
 detach(iris)
 
